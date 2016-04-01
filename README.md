@@ -1,4 +1,5 @@
 ## Skeletal Theme
+This is our basic theme. The one to rule them all. Whenever we have to build a theme this is the structure that we want to use. 
 
 ## Dependencies
 * [Node JS](http://nodejs.org/)
@@ -15,10 +16,10 @@
 
 * `app/`: All the pages of the theme go in the root  of this folder
 * `app/js/`: All the JS files should be added here.
-* `app/css/`: All the custom css should be added here.
+* `app/css/`: All the css, sass and whatever else that will be spit out as css in the build should be added here.
 * `app/images/`: All the custom images should be added here.
 * `app/fonts/`: All the custom fonts should be added here.
-* `app/templates/`: This is where the underscore templates live.
+* `app/includes/`: This is where the html templates live.
 * `build`: This is where the theme is written after it has been compiled. This directory should never be touched, since it only contains generated code.
 * `gulp`: All gulp tasks go here.
 * `webpack.config.js`: This is where the configuration for the webpack lives.

@@ -1,0 +1,110 @@
+@media (max-width: 414px){
+    /* fix header for Iphone 6 Plus or smaller devices on portrait mode */
+
+    .bio__content h1,
+    .bio__content .agent-details,
+    .bio__content .agent-intro {
+        margin-left: -78%;
+    }
+
+    .bio__content h1 {
+        font-size: 22px;
+    }
+
+    .bio .subtitle {
+        padding-bottom: 18px;
+    }
+
+    .mobile-buttons a {
+        padding: 8px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .info-list {
+        font-size: 18px;
+    }
+
+    .info-list.agent-details {
+        margin-top: 100px;
+    }
+
+    .info-list.agent-details dt {
+        text-transform: uppercase;
+    }
+
+    /* Resize mobile navigation */
+
+    .bio {
+        padding: 80px 0 10px;
+    }
+
+    /* The !important statement are here to override the height values set by the javascript menu */
+
+    #navigation {
+        height: 73px !important;
+    }
+
+    a.mobile-menu-button {
+        width: 74px;
+        line-height: 16px;
+        font-size: 15px;
+    }
+
+    header .logo img {
+        width: 85px;
+        height: 50px !important;
+    }
+
+}
+
+.bio .pic img {
+    width: 100%;
+}
+
+
+.bio .subtitle {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    font-weight: lighter;
+}
+
+.info-list dt {
+    float: left;
+    padding-right: 5px;
+    font-weight: normal;
+    color: #000;
+}
+
+.bio .info-list dt {
+    font-weight: bold;
+}
+
+.contact-link,
+.contact-link:hover {
+    cursor: pointer;
+}
+
+.bio .social-assets {
+    float: right;
+}
+
+@media (max-width: 991px) {
+    .bio .social-assets {
+        float: none;
+        margin-bottom: 1em;
+    }
+    .bio .subtitle {
+        margin-bottom: 1em;
+    }
+}
+
+.bio .social-assets a {
+    text-decoration: none;
+}
+
+.bio h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
