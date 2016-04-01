@@ -1,0 +1,46 @@
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>Standard Posts<small> Our curated posts</small></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <% if(articles.length > 0) { %>
+                        <div class="row">
+
+        <% _.each(articles, function(post, index) { %>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <% if(post.article_url){ %>
+                                <a href="<%= post.article_url %>" target="_blank">
+                            <% } %>
+                            <div class="standard-post">
+                                <% if(post.image_url) { %>
+                                    <div class="standard-post__photo">
+                                        <img src="<%= post.image_url %>" />
+                                    </div>
+                                <% } %>
+                                <div class="standard-post__content">
+                                  <div class="content-inner">
+                                    <% if(post.link){ %>
+                                        <div class="tile-header">
+                                            <%= post.title %>
+                                        </div>
+                                        <p class="content-summary"><%= post.content %></p>
+                                    <% } %>
+                                    <% if(post.content) { %>
+                                        <p><%= post.content %></p>
+                                    <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                            <% if(post.link){ %>
+                                </a>
+                            <% } %>
+                        </div>
+                <% }); %>
+                     </div>
+            <% } %>
+ </div>
