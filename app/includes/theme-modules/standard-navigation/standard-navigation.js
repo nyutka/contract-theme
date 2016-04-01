@@ -1,4 +1,4 @@
-define(["data",
+/* define(["data",
         "jquery",
         "underscore",
         "module-loader",
@@ -16,3 +16,27 @@ define(["data",
     
     var standardNavigation = new Module(args);
 });
+*/
+
+
+require("jquery");
+require("underscore");
+require("./standard-navigation.css");
+
+var Module = require("theme_module_loader");
+var data = require("./data.json");
+var htmlTemplate = require("./standard-navigation.html");
+var callback = require("./standard-navigation-callback.js");
+var args = {
+        name: "standard-navigation",
+        htmlTemplate: htmlTemplate,
+        data: data,
+        callback: callback
+    };
+
+var standardNavigation = new Module(args);
+
+standardNavigation.init();
+
+
+

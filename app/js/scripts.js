@@ -4,6 +4,7 @@ var $ = require("jquery");
 var _ = require("underscore");
 var moment = require("moment");
 var JSContext = require("./common/jscontext.js");
+var navigation = require("../includes/theme-modules/standard-navigation/standard-navigation.js");
 //var viewHelpers = require("../../common/js/view-helpers.js");
 //var footerHtml = require("../templates/footer.html");
 var baseLink = JSContext.getBaseLink();
