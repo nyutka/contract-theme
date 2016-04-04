@@ -43,6 +43,8 @@ define(["underscore", "jquery"], function (_, $) {
             this.callback();
         }
 
+        this.init();
+
     };
 
     return Module;

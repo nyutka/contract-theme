@@ -99,6 +99,7 @@ var _getCurrentPageName = function() {
 
 
 var initializeTemplates = function() {
+    navigation.init();
     // Templates and modules init goes here.
 };
 
@@ -110,7 +111,7 @@ var setAccentColor = function(){
 
 
 $(document).ready(function() {
-    //initializeTemplates();
+    initializeTemplates();
     //setAccentColor();
 });
 

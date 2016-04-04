@@ -1,11 +1,11 @@
-/* define(["data",
+ /* define(["./data.json",
         "jquery",
         "underscore",
-        "module-loader",
-        "text!/static/themes/generic-standard-theme/theme-modules/standard-navigation/standard-navigation.html",
-        "/static/themes/generic-standard-theme/theme-modules/standard-navigation/standard-navigation-callback.js",
-        "css!/static/themes/generic-standard-theme/theme-modules/standard-navigation/standard-navigation.css"
-], function (data, $, _, Module, htmlTemplate, callback ) {
+        "theme_module_loader",
+        "./standard-navigation.html",
+        "./standard-navigation-callback.js",
+        "./standard-navigation.css"
+], function (data, $, _, Module, htmlTemplate, callback) {
     
     var args = {
         name: "standard-navigation",
@@ -15,28 +15,35 @@
     };
     
     var standardNavigation = new Module(args);
+
+    return standardNavigation;
 });
+
 */
 
 
-require("jquery");
-require("underscore");
+var $ = require("jquery");
+var _ = require("underscore");
 require("./standard-navigation.css");
 
 var Module = require("theme_module_loader");
 var data = require("./data.json");
 var htmlTemplate = require("./standard-navigation.html");
 var callback = require("./standard-navigation-callback.js");
-var args = {
-        name: "standard-navigation",
-        htmlTemplate: htmlTemplate,
-        data: data,
-        callback: callback
-    };
 
-var standardNavigation = new Module(args);
 
-standardNavigation.init();
 
+module.exports = {
+    init: function(){
+        var args = {
+            name: "standard-navigation",
+            htmlTemplate: htmlTemplate,
+            data: data,
+            callback: callback
+        };
+
+        var standardNavigation = new Module(args);
+    }
+}
 
 
