@@ -7,17 +7,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var main_js = "[name].js";
 var main_css = "[name].css";
 var vendor_js = "vendor.js";
-var basePath = "/static/themes/skeletal/build/";
-
-if (process.env.WEBPACK_ENV === "production") {
-    main_js = "[name].[chunkhash].js";
-    main_css = "[name].[chunkhash].css";
-    vendor_js = "vendor.[chunkhash].js";
-}
 
 module.exports = {
     devtool: 'source-map',
-    context: path.resolve(__dirname, 'app/js'),
+    context: path.resolve(__dirname, '../app/js'),
     entry: {
         main: "./scripts.js",
         vendor: [
@@ -30,13 +23,13 @@ module.exports = {
     },
     resolve: {
         alias: {
-            jquery: path.join(__dirname, "node_modules/jquery/dist/jquery.js"),
-            underscore: path.join(__dirname, "node_modules/underscore/underscore.js"),
-            moment: path.join(__dirname, "node_modules/moment/moment.js"),
-            bootstrap: path.join(__dirname, "node_modules/bootstrap/dist/js/bootstrap.js"),
-            bootstrap_css: path.join(__dirname, "node_modules/bootstrap/dist/css/bootstrap.css"),
-            mapbox: path.join(__dirname, "node_modules/mapbox.js"),
-            mapbox_css: path.join(__dirname, "node_modules/mapbox.js/theme/style.css")
+            jquery: path.join(__dirname, "../node_modules/jquery/dist/jquery.js"),
+            underscore: path.join(__dirname, "../node_modules/underscore/underscore.js"),
+            moment: path.join(__dirname, "../node_modules/moment/moment.js"),
+            bootstrap: path.join(__dirname, "../node_modules/bootstrap/dist/js/bootstrap.js"),
+            bootstrap_css: path.join(__dirname, "../node_modules/bootstrap/dist/css/bootstrap.css"),
+            mapbox: path.join(__dirname, "../node_modules/mapbox.js"),
+            mapbox_css: path.join(__dirname, "../node_modules/mapbox.js/theme/style.css")
         },
     },
     module: {
@@ -68,8 +61,7 @@ module.exports = {
         ]
     },
     output: {
-        publicPath: basePath,
-        path: __dirname + "/build",
+        path: path.join(__dirname, "../build/"),
         filename: main_js
     },
     plugins: [
@@ -84,9 +76,7 @@ module.exports = {
         new ExtractTextPlugin(main_css, {
             allChunks: true
         }),
-        new ManifestPlugin({
-            basePath: basePath
-        }),
+        new ManifestPlugin(),
         new ChunkManifestPlugin({
             manifestVariable: "webpackManifest"
         }),
