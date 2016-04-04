@@ -2,15 +2,16 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var concatCss = require('gulp-concat-css');
+var config = require('../config').css;
 
 gulp.task('css:custom', function() {
-  return gulp.src('./app/css/**/*.css')
-    .pipe(concatCss("css/main.css"))
-    .pipe(gulp.dest('./build'));
+  return gulp.src(config.src)
+    .pipe(concatCss(config.mainBundle))
+    .pipe(gulp.dest(config.dest));
 });
 
 gulp.task('css:vendor', function() {
-  return gulp.src(['./node_modules/mapbox.js/theme/style.css', './node_modules/bootstrap/dist/css/bootstrap.css'])
-    .pipe(concatCss("css/vendor.css"))
-    .pipe(gulp.dest('./build'));
+  return gulp.src(config.vendors)
+    .pipe(concatCss(config.vendorBundle))
+    .pipe(gulp.dest(config.dest));
 });

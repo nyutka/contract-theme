@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var config = require('./config').js;
 var ManifestPlugin = require('webpack-manifest-plugin');
 var ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -59,7 +60,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.join(__dirname, "../build/js/"),
+        path: config.dest,
         filename: main_js
     },
     plugins: [
