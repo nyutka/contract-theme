@@ -27,9 +27,7 @@ module.exports = {
             underscore: path.join(__dirname, "../node_modules/underscore/underscore.js"),
             moment: path.join(__dirname, "../node_modules/moment/moment.js"),
             bootstrap: path.join(__dirname, "../node_modules/bootstrap/dist/js/bootstrap.js"),
-            bootstrap_css: path.join(__dirname, "../node_modules/bootstrap/dist/css/bootstrap.css"),
             mapbox: path.join(__dirname, "../node_modules/mapbox.js"),
-            mapbox_css: path.join(__dirname, "../node_modules/mapbox.js/theme/style.css")
         },
     },
     module: {
@@ -61,7 +59,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.join(__dirname, "../build/"),
+        path: path.join(__dirname, "../build/js/"),
         filename: main_js
     },
     plugins: [
