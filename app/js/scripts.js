@@ -1,9 +1,5 @@
 "use strict";
 
-require("bootstrap");
-require("bootstrap_css");
-require("mapbox_css");
-require("../css/styles.css");
 var $ = require("jquery");
 var _ = require("underscore");
 var moment = require("moment");
