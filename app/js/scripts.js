@@ -5,8 +5,7 @@ var _ = require("underscore");
 var moment = require("moment");
 var JSContext = require("./common/jscontext.js");
 var navigation = require("../includes/theme-modules/standard-navigation/standard-navigation.js");
-//var viewHelpers = require("../../common/js/view-helpers.js");
-//var footerHtml = require("../templates/footer.html");
+var posts = require("../includes/theme-modules/standard-posts/standard-posts.js");
 var baseLink = JSContext.getBaseLink();
 var themeData = JSContext.getThemeData();
 
@@ -100,6 +99,7 @@ var _getCurrentPageName = function() {
 
 var initializeTemplates = function() {
     navigation.init();
+    posts.init();
     // Templates and modules init goes here.
 };
 
