@@ -1,5 +1,5 @@
 "use strict";
-require("./data-loader.js");
+require("./data-loader.js").init();
 var $ = require("jquery");
 var _ = require("underscore");
 var JSContext = require("./common/jscontext.js");

@@ -34,4 +34,9 @@ var initJSContext = function(){
     }
 }
 
-initJSContext();
+module.exports = {
+    init: function(){
+        initJSContext();
+    }
+}
+
