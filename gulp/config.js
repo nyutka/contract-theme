@@ -36,7 +36,7 @@ module.exports = {
     },
     html: {
         src: src + '/**/*.html',
-        dest: dest + '/html'
+        dest: dest + '/'
     },
     js: {
         all: src + '/js/**/*.js',

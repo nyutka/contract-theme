@@ -25,22 +25,12 @@ module.exports = {
     },
     resolve: {
         alias: {
-<<<<<<< 89bedafd3e5bf3d128f6df46148e72a60839fa8c:gulp/webpack.config.js
             jquery: path.join(__dirname, "../node_modules/jquery/dist/jquery.js"),
             underscore: path.join(__dirname, "../node_modules/underscore/underscore.js"),
             moment: path.join(__dirname, "../node_modules/moment/moment.js"),
             bootstrap: path.join(__dirname, "../node_modules/bootstrap/dist/js/bootstrap.js"),
             mapbox: path.join(__dirname, "../node_modules/mapbox.js"),
-=======
-            jquery: path.join(__dirname, "node_modules/jquery/dist/jquery.js"),
-            underscore: path.join(__dirname, "node_modules/underscore/underscore.js"),
-            moment: path.join(__dirname, "node_modules/moment/moment.js"),
-            bootstrap: path.join(__dirname, "node_modules/bootstrap/dist/js/bootstrap.js"),
-            bootstrap_css: path.join(__dirname, "node_modules/bootstrap/dist/css/bootstrap.css"),
-            mapbox: path.join(__dirname, "node_modules/mapbox.js"),
-            mapbox_css: path.join(__dirname, "node_modules/mapbox.js/theme/style.css"),
-            theme_module_loader: path.join(__dirname, "app/js/common/module-loader.js")
->>>>>>> fix the linking adding the nav:webpack.config.js
+            theme_module_loader: path.join(__dirname, "../app/js/common/module-loader.js")
         },
     },
     module: {
