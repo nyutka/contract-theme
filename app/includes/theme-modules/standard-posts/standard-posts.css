@@ -106,7 +106,7 @@
     position: absolute;
     top: 2px;
     right: -2px;
-    background: url(../images/icon-more.png) no-repeat;
+    /* background: url(../images/icon-more.png) no-repeat; */
 }
 
 .standard-post__content .content-summary {

@@ -8,30 +8,30 @@
         </div>
     </div>
 <div class="container">
-    <% if(articles.length > 0) { %>
+    <% if(posts.length > 0) { %>
                         <div class="row">
 
-        <% _.each(articles, function(post, index) { %>
+        <% _.each(posts, function(post, index) { %>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <% if(post.article_url){ %>
+                            <% if(post.link){ %>
                                 <a href="<%= post.article_url %>" target="_blank">
                             <% } %>
                             <div class="standard-post">
-                                <% if(post.image_url) { %>
+                                <% if(post.image) { %>
                                     <div class="standard-post__photo">
-                                        <img src="<%= post.image_url %>" />
+                                        <img src="<%- post.image %>" />
                                     </div>
                                 <% } %>
                                 <div class="standard-post__content">
                                   <div class="content-inner">
-                                    <% if(post.link){ %>
+                                    <% if(post.link_title){ %>
                                         <div class="tile-header">
-                                            <%= post.title %>
+                                            <%= post.link_title %>
                                         </div>
-                                        <p class="content-summary"><%= post.content %></p>
+                                        <p class="content-summary"><%- post.summary %></p>
                                     <% } %>
-                                    <% if(post.content) { %>
-                                        <p><%= post.content %></p>
+                                    <% if(post.summary) { %>
+                                        <p><%- post.summary %></p>
                                     <% } %>
                                     </div>
                                 </div>

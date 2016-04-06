@@ -40,11 +40,11 @@ define(["underscore", "jquery"], function (_, $) {
             this.render();
 
             // Execute any module specific javascript
-            console.log(this.callback);
             this.callback();
         }
 
         this.init();
+
     };
 
     return Module;

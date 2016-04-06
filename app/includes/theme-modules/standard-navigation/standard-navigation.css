@@ -102,8 +102,8 @@ header .logo img {
     position: absolute;
     top: 8px;
     right: -5px;
-    background: url(../images/arrow.png) no-repeat;
 }
+
 @media all and (max-width: 1199px) {
     #main-nav {
         margin-left: 0;

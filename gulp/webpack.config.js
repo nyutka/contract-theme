@@ -19,7 +19,8 @@ module.exports = {
             "underscore",
             "moment",
             "bootstrap",
-            "mapbox"
+            "mapbox",
+            "theme_module_loader"
         ]
     },
     resolve: {
@@ -29,6 +30,7 @@ module.exports = {
             moment: path.join(__dirname, "../node_modules/moment/moment.js"),
             bootstrap: path.join(__dirname, "../node_modules/bootstrap/dist/js/bootstrap.js"),
             mapbox: path.join(__dirname, "../node_modules/mapbox.js"),
+            theme_module_loader: path.join(__dirname, "../app/js/common/module-loader.js")
         },
     },
     module: {
