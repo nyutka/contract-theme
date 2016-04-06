@@ -4,7 +4,6 @@ var JSContext = require("../../../js/common/jscontext.js");
 var htmlTemplate = require("./standard-navigation.html");
 var callback = require("./standard-navigation-callback.js");
 var data = window.JSContext;
-console.log(window.JSContext);
 module.exports = {
     init: function(){
 
