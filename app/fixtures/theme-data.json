@@ -1,55 +1,62 @@
 {
-	"corp_header_link_1": "http://www.anpac.com/",
-	"corp_header_link_2": "http://agentcareers.anico.com/",
-	"header_background": "#B12029",
-	"logo_header": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/f36e285b757b46d698a8821f2c2494ef.png",
-	"corp_footer_link_3": "https://sso.anico.com/idp/SSO.saml2",
-	"copyright": "&copy; Copyright 2016 American National Insurance Company. All Rights Reserved.",
-	"corp_footer_link_1": "http://www.anpac.com/get-a-quote/",
-	"google_plus_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/6024bce67313470b8eae05f67df84959.png",
-	"what_we_do": {
-		"culture": "<p>What does it mean to be an American National insurance agent?</p><p>It means building a successful independent business while helping your neighbors protect what they value the most. It means finding that balance between your career, your lifestyle, your goals and your beliefs. It means being truly rewarded for your hard work and effort.</p><p>It means more.</p>",
-		"rewards": "<p>Our agents are the face of American National and are essential to the company’s success. That’s why American National feels it’s important to significantly reward and recognize top achievers. They offer numerous production, profit bonus opportunities and performance-based awards. One sought-after incentive is an invitation for the agent and a guest to the annual marketing conference, held in noteworthy locales across the globe. Past conference locations include Rome, Key Biscayne, Paris, Madrid, London, Monte Carlo, Sydney and Hong Kong.</p>",
-		"intro": "<p>American National prides itself on being a family-oriented company. Working with dedicated people who embrace this tradition lays a foundation for rewarding careers, and provides our customers with the service they expect and deserve. This concept has helped American National become one of the leading life insurance providers in the industry.</p>",
-		"training_development": "<p>While a background in sales is certainly beneficial when building a career as an insurance agent, it’s not a necessity. The majority of our agents didn’t get their start in insurance. If you are a self-starter, highly motivated, enjoy building relationships and have a passion to exceed expectations – you already have the tools for success.</p><p>American National takes an innovative approach to training with paid internships. Candidates selected for the Agent Career Program (ACP) become agency interns and receive paid training through Kelly OCG, a third-party company contracted with American National. It’s important for candidates to focus on learning the skills and receiving the in-depth training they will need to be successful, rather than wondering how they will support themselves while in the program.</p><p>To help candidates better understand the day-to-day tasks involved in running an insurance agency, each agency intern spends several weeks working in the office of a “mentor agent” gaining the skills needed to be successful. This on-the-job learning prepares agents to handle client needs from the first day they establish their agency.</p>"
-	},
-	"customer_login_link": "https://portal.anico.com/wps/myportal?style=anico",
-	"corp_footer_link_4": "http://agentcareers.anico.com/",
-	"logo_footer": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/bfe6a22c82394abcbd76301fc1e95c4d.png",
-	"twitter_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/d2b8a2bf03414d47af1fa39878e2a72f.png",
-	"contact_confirmation": "<p>Thank you very much for your interest in American National. We’ve received your request for information about career opportunities with us.</p><p>Someone will be contacting you by the preferred method you indicated.</p><p>In the meantime, please visit my website to stay up to date on what’s happening within my agency.</p><p>We truly appreciate your request and thank you very much for your interest in working with us.</p>",
-	"products": [{
-		"product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/2d3511c0078d4d10b2ff8272d0e3abbb.png",
-		"product_blurb": "With a host of features and a wide array of options not offered by some insurers, you can customize policies to fit the needs of your clients.",
-		"product_icon_link": "http://www.anpac.com/homeowners-insurance/",
-		"product_title": "Homeowners Insurance"
-	}, {
-		"product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/9cfa7a3259ba42ce8d11929a9d318fb7.png",
-		"product_blurb": "We offer many different deductible and endorsement options to help your clients find the right combination of coverage to fit their needs.",
-		"product_icon_link": "http://www.anpac.com/auto-insurance/",
-		"product_title": "Auto Insurance"
-	}, {
-		"product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/fbae9d65ed254132ba04f3b1ca1e986a.png",
-		"product_blurb": "Offer a range of options that can be tailored to your client’s needs such as whole life, term life, universal life.",
-		"product_icon_link": "http://www.anpac.com/life-insurance/",
-		"product_title": "Life Insurance"
-	}, {
-		"product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/246eda7ca21f4f20a3dadc83bebe525f.png",
-		"product_blurb": "Find out about flexible, tailored insurance that can help protect business owners. Our policy includes coverage such as business income if you can’t operate your business due to a covered cause of loss*.  *Business Income is supplemented to the extent of the actual loss sustained for a period of up to 12 months.",
-		"product_icon_link": "http://www.anpac.com/business-insurance/",
-		"product_title": "Business Insurance"
-	}, {
-		"product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/5943161c79994f349c47d08dd65ce308.png",
-		"product_blurb": "Our exclusive agribusiness policy allows you to customize a program to match your client's personal and business needs.",
-		"product_icon_link": "http://www.anpac.com/agriculture-insurance/",
-		"product_title": "Farm & Ranch Coverage"
-	}, {
-		"product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/c856d8e6c80944778fa265f6ce0729aa.png",
-		"product_blurb": "Learn about additional products, rewards and discounts",
-		"product_icon_link": "http://www.anpac.com",
-		"product_title": "More"
-	}],
-	"corp_footer_link_2": "http://www.anpac.com/claims/report-a-claim/",
-	"facebook_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/3966037ceb3440218af1ed96e7864db9.png",
-	"linkedin_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/30e1ff3ee6f841bab8497f38ce80fabf.png"
+  "corp_header_link_1": "http://www.anpac.com/",
+  "corp_header_link_2": "http://agentcareers.anico.com/",
+  "header_background": "#B12029",
+  "logo_header": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/f36e285b757b46d698a8821f2c2494ef.png",
+  "corp_footer_link_3": "https://sso.anico.com/idp/SSO.saml2",
+  "copyright": "&copy; Copyright 2016 American National Insurance Company. All Rights Reserved.",
+  "corp_footer_link_1": "http://www.anpac.com/get-a-quote/",
+  "google_plus_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/6024bce67313470b8eae05f67df84959.png",
+  "what_we_do": {
+    "culture": "<p>What does it mean to be an American National insurance agent?</p><p>It means building a successful independent business while helping your neighbors protect what they value the most. It means finding that balance between your career, your lifestyle, your goals and your beliefs. It means being truly rewarded for your hard work and effort.</p><p>It means more.</p>",
+    "rewards": "<p>Our agents are the face of American National and are essential to the company’s success. That’s why American National feels it’s important to significantly reward and recognize top achievers. They offer numerous production, profit bonus opportunities and performance-based awards. One sought-after incentive is an invitation for the agent and a guest to the annual marketing conference, held in noteworthy locales across the globe. Past conference locations include Rome, Key Biscayne, Paris, Madrid, London, Monte Carlo, Sydney and Hong Kong.</p>",
+    "intro": "<p>American National prides itself on being a family-oriented company. Working with dedicated people who embrace this tradition lays a foundation for rewarding careers, and provides our customers with the service they expect and deserve. This concept has helped American National become one of the leading life insurance providers in the industry.</p>",
+    "training_development": "<p>While a background in sales is certainly beneficial when building a career as an insurance agent, it’s not a necessity. The majority of our agents didn’t get their start in insurance. If you are a self-starter, highly motivated, enjoy building relationships and have a passion to exceed expectations – you already have the tools for success.</p><p>American National takes an innovative approach to training with paid internships. Candidates selected for the Agent Career Program (ACP) become agency interns and receive paid training through Kelly OCG, a third-party company contracted with American National. It’s important for candidates to focus on learning the skills and receiving the in-depth training they will need to be successful, rather than wondering how they will support themselves while in the program.</p><p>To help candidates better understand the day-to-day tasks involved in running an insurance agency, each agency intern spends several weeks working in the office of a “mentor agent” gaining the skills needed to be successful. This on-the-job learning prepares agents to handle client needs from the first day they establish their agency.</p>"
+  },
+  "customer_login_link": "https://portal.anico.com/wps/myportal?style=anico",
+  "corp_footer_link_4": "http://agentcareers.anico.com/",
+  "logo_footer": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/bfe6a22c82394abcbd76301fc1e95c4d.png",
+  "twitter_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/d2b8a2bf03414d47af1fa39878e2a72f.png",
+  "contact_confirmation": "<p>Thank you very much for your interest in American National. We’ve received your request for information about career opportunities with us.</p><p>Someone will be contacting you by the preferred method you indicated.</p><p>In the meantime, please visit my website to stay up to date on what’s happening within my agency.</p><p>We truly appreciate your request and thank you very much for your interest in working with us.</p>",
+  "products": [
+    {
+      "product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/2d3511c0078d4d10b2ff8272d0e3abbb.png",
+      "product_blurb": "With a host of features and a wide array of options not offered by some insurers, you can customize policies to fit the needs of your clients.",
+      "product_icon_link": "http://www.anpac.com/homeowners-insurance/",
+      "product_title": "Homeowners Insurance"
+    },
+    {
+      "product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/9cfa7a3259ba42ce8d11929a9d318fb7.png",
+      "product_blurb": "We offer many different deductible and endorsement options to help your clients find the right combination of coverage to fit their needs.",
+      "product_icon_link": "http://www.anpac.com/auto-insurance/",
+      "product_title": "Auto Insurance"
+    },
+    {
+      "product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/fbae9d65ed254132ba04f3b1ca1e986a.png",
+      "product_blurb": "Offer a range of options that can be tailored to your client’s needs such as whole life, term life, universal life.",
+      "product_icon_link": "http://www.anpac.com/life-insurance/",
+      "product_title": "Life Insurance"
+    },
+    {
+      "product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/246eda7ca21f4f20a3dadc83bebe525f.png",
+      "product_blurb": "Find out about flexible, tailored insurance that can help protect business owners. Our policy includes coverage such as business income if you can’t operate your business due to a covered cause of loss*.  *Business Income is supplemented to the extent of the actual loss sustained for a period of up to 12 months.",
+      "product_icon_link": "http://www.anpac.com/business-insurance/",
+      "product_title": "Business Insurance"
+    },
+    {
+      "product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/5943161c79994f349c47d08dd65ce308.png",
+      "product_blurb": "Our exclusive agribusiness policy allows you to customize a program to match your client's personal and business needs.",
+      "product_icon_link": "http://www.anpac.com/agriculture-insurance/",
+      "product_title": "Farm & Ranch Coverage"
+    },
+    {
+      "product_icon": "https://hsl-downloadable-files.s3.amazonaws.com/1054/c856d8e6c80944778fa265f6ce0729aa.png",
+      "product_blurb": "Learn about additional products, rewards and discounts",
+      "product_icon_link": "http://www.anpac.com",
+      "product_title": "More"
+    }
+  ],
+  "corp_footer_link_2": "http://www.anpac.com/claims/report-a-claim/",
+  "facebook_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/3966037ceb3440218af1ed96e7864db9.png",
+  "linkedin_icon": "https://hsl-downloadable-files-test1.s3.amazonaws.com/2001/30e1ff3ee6f841bab8497f38ce80fabf.png"
 }
