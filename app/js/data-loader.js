@@ -1,7 +1,6 @@
 var JSContext = require("./common/jscontext.js");
 
 var buildDummyJSContext = function(profileType){
-    console.log("fixtures");
     var profile = {};
     switch(profileType){
         case("optimal"):
@@ -29,10 +28,9 @@ var buildDummyJSContext = function(profileType){
 }
 
 var initJSContext = function(){
-    console.log("fixtures");
-    var profileType = "optimal";
+    var profileType = "edge";
     if (!window.JSContext){
-        JSContext.loadData(buildDummyJSContext())
+        JSContext.loadData(buildDummyJSContext("optimal"))
     }
 }
 
