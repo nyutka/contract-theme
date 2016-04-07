@@ -1,18 +1,16 @@
 "use strict";
-
+require("./data-loader.js").init();
 var $ = require("jquery");
 var _ = require("underscore");
-var moment = require("moment");
 var JSContext = require("./common/jscontext.js");
+var moment = require("moment");
 var navigation = require("../includes/theme-modules/standard-navigation/standard-navigation.js");
 var posts = require("../includes/theme-modules/standard-posts/standard-posts.js");
-var baseLink = JSContext.getBaseLink();
-var themeData = JSContext.getThemeData();
 
 var getPostsData = function() {
     return {
         posts: JSContext.getPosts(),
-        baseLink: baseLink,
+        baseLink: JSContext.getBaseLink(),
         truncated: false
     };
 };
@@ -21,7 +19,7 @@ var getEventsData = function() {
     var events = JSContext.getEvents();
     return {
         events: events,
-        baseLink: baseLink,
+        baseLink: JSContext.getBaseLink(),
         truncated: false
     };
 };
@@ -59,8 +57,9 @@ var getProfileData = function() {
 };
 
 var getHeaderData = function() {
+    var themeData = JSContext.getThemeData();
     return {
-        "baseLink": baseLink,
+        "baseLink": JSContext.getBaseLink(),
         "logo": themeData.logo_header,
         "links": {
             "corporateLink": themeData.corp_header_link_1,
@@ -71,6 +70,7 @@ var getHeaderData = function() {
 };
 
 var getFooterLinks = function() {
+    var themeData = JSContext.getThemeData();
     return {
         "quoteLink": themeData.corp_footer_link_1,
         "claimLink": themeData.corp_footer_link_2,
@@ -80,6 +80,7 @@ var getFooterLinks = function() {
 };
 
 var getSocialIcons = function() {
+    var themeData = JSContext.getThemeData();
     return {
         "facebookIcon": themeData.facebook_icon,
         "googlePlusIcon": themeData.google_plus_icon,
@@ -104,15 +105,15 @@ var initializeTemplates = function() {
 };
 
 var setAccentColor = function(){
+    var themeData = JSContext.getThemeData();
     var accentColor = themeData.header_background;
     $(".bg-color-accent").css("background-color", accentColor);
     $(".color-accent").css("color", accentColor);
 }
 
-
 $(document).ready(function() {
     initializeTemplates();
-    //setAccentColor();
+    setAccentColor();
 });
 
 

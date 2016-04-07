@@ -1,10 +1,6 @@
-
-
-require("./standard-posts.css");
 var Module = require("theme_module_loader");
-var data = require("../data.json");
+var data = window.JSContext;
 var htmlTemplate = require("./standard-posts.html");
-
 module.exports = {
     init: function(){
         var args = {

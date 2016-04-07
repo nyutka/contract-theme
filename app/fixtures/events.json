@@ -1,0 +1,22 @@
+[
+  {
+    "rsvp_type": "phone",
+    "location_text": "my house",
+    "photo": "",
+    "event_date_end": null,
+    "site_id": 1141,
+    "organization_id": 2001,
+    "id": 455,
+    "event_name": "Event with phone",
+    "publish_date": "2016-03-15T17:42:40",
+    "details": "This is a test event with a phone rsvp.",
+    "event_date": "2016-06-15T18:00:00",
+    "rsvp_info": "444 555 5666",
+    "location_coords": [
+      null,
+      null
+    ],
+    "formattedDate": "June 15 2016, 11:00 am",
+    "rsvp_link": "tel:4445555666"
+  }
+]
