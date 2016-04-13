@@ -11,6 +11,7 @@
     "file-loader": "^0.8.5",
     "gulp": "^3.9.1",
     "gulp-concat-css": "^2.2.0",
+    "gulp-css-url-fix": "0.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",

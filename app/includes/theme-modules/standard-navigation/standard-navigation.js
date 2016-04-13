@@ -8,7 +8,7 @@ module.exports = {
     init: function(){
 
         var args = {
-            name: "standard-navigation",
+            id: "standard-navigation", 
             htmlTemplate: htmlTemplate,
             data: data,
             callback: callback

@@ -1,6 +1,6 @@
-define(["underscore", "jquery"], function (_, $) {
+define(["underscore", "jquery"], function(_, $) {
 
-    var Module = function (args) {
+    var Module = function(args) {
 
         // Merge argumentsobject in the Module loader. Expected values:
         // this.name
@@ -14,30 +14,26 @@ define(["underscore", "jquery"], function (_, $) {
             }
         }
 
-        this.modulesFolder = "static/theme-modules";
-        this.imagesFolder = "images";
-        this.moduleLocation = this.modulesFolder + "/" + this.name;
-        this.imagesLocation = this.moduleLocation + "/" + this.imagesFolder + "/";
         this.templateData = $.extend({
-                    module: this
-                }, this.data);
-    
-        this.render = function () {
+            module: this
+        }, this.data);
 
-            var template = _.template(this.htmlTemplate),
-                $container = $("#" + this.name),
-                renderedTemplate = template(this.templateData);
+        this.render = function(template, data) {
+
+            var template = _.template(template),
+                $container = $("#" + this.id),
+                renderedTemplate = template(data);
 
             // Append rendered module in the container element in the DOM
             $container.append(renderedTemplate);
 
-            console.log(this.name + " loaded.");
+            console.log(this.id + " loaded.");
         }
 
-        this.init = function () {
+        this.init = function() {
 
             // Render module
-            this.render();
+            this.render(this.htmlTemplate, this.templateData);
 
             // Execute any module specific javascript
             this.callback();

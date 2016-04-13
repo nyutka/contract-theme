@@ -17,9 +17,12 @@ module.exports = {
         ]
     },
     css: {
-        src: src + '/**/*.css',
         dest: dest + '/css',
         mainBundle: 'main.css',
+        main: [
+            src + '/css/styles.css',
+            src + '/includes/**/**/*.css'
+        ],
         vendorBundle: 'vendor.css',
         vendors: [
             './node_modules/mapbox.js/theme/style.css',
