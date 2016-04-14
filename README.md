@@ -8,9 +8,10 @@ This is our basic theme. The one to rule them all. Whenever we have to build a t
 ## Installation
 1. install NPM, see: https://docs.npmjs.com/
 2. cd into the root directory of the theme where `package.json` is located.
-3. run `npm install`
-4. run `gulp`
-5. open browser on http://localhost:3000/
+3. install GULP, see: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md (steps 1 and 2)
+4. run `npm install`
+5. run `gulp`
+6. open browser on http://localhost:3000/
 
 ## Running
 1. `gulp`: Runs the default Gulp task. This builds the project with source maps from the `app` folder into the `build` folder, spawns a Node server, opens a new browser with the website at http://localhost:3000, and listens for subsequent changes. When you edit and save a new file, Gulp will recompile accordingly and refresh your browser window with the latest changes automatically.
