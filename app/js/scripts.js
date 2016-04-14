@@ -1,10 +1,11 @@
 "use strict";
-require("./common/data-loader.js").init("edge");
+require("./common/data-loader.js").init("optimal");
 var $ = require("jquery");
 var _ = require("underscore");
 var JSContext = require("./common/jscontext.js");
 var moment = require("moment");
-var navigation = require("../includes/theme-modules/standard-navigation/standard-navigation.js");
+var navigation = require("../includes/navigation/navigation.js");
+var profile = require("../includes/profile/profile.js");
 
 var getPostsData = function() {
     return {
@@ -99,6 +100,7 @@ var _getCurrentPageName = function() {
 
 var initializeTemplates = function() {
     navigation.init();
+    profile.init();
     // Templates and modules init goes here.
 };
 

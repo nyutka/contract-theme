@@ -21,7 +21,7 @@ module.exports = {
         mainBundle: 'main.css',
         main: [
             src + '/css/styles.css',
-            src + '/includes/**/**/*.css'
+            src + '/includes/**/*.css'
         ],
         vendorBundle: 'vendor.css',
         vendors: [
