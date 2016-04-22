@@ -18,15 +18,20 @@ module.exports = {
     },
     css: {
         dest: dest + '/css',
-        mainBundle: 'main.css',
+        mainBundle: 'main.scss',
         main: [
             src + '/css/styles.css',
-            src + '/includes/**/*.css'
+            src + '/css/styles.scss',
+            src + '/includes/**/*.css',
+            src + '/includes/**/*.scss'
         ],
         vendorBundle: 'vendor.css',
         vendors: [
             './node_modules/mapbox.js/theme/style.css',
             './node_modules/bootstrap/dist/css/bootstrap.css'
+        ],
+        includePaths: [
+            src + '/css'
         ]
     },
     fonts: {

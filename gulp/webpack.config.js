@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var config = require('./config').js;
+var configCSS = require('./config').css;
 var ManifestPlugin = require('webpack-manifest-plugin');
 var ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -40,6 +41,10 @@ module.exports = {
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader")
             },
             {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader", "sass-loader")
+            },
+            {
                 test: /\.(png|gif|jpe?g|svg)$/i,
                 loader: "url?name=images/[hash].[ext],limit=1000"
             },
@@ -60,6 +65,9 @@ module.exports = {
                 loader: "file-loader?name=fonts/[hash].[ext]"
             }
         ]
+    },
+    sassLoader: {
+        includePaths: configCSS.includePaths
     },
     output: {
         path: config.dest,
