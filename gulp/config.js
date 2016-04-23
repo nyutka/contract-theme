@@ -39,7 +39,10 @@ module.exports = {
         dest: dest + '/fonts'
     },
     images: {
-        src: src + '/images/**',
+        src: [
+            src + '/images/**',
+            src + '/includes/**/images/**'
+        ],
         dest: dest + '/images'
     },
     html: {
