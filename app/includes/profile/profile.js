@@ -1,4 +1,4 @@
-require("./profile.css");
+require("!css!sass!./profile.scss");
 var Module = require("theme_module_loader");
 var JSContext = require("../../js/common/jscontext.js");
 var htmlTemplate = require("./profile.html");
