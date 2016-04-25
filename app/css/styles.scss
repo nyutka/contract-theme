@@ -1,3 +1,34 @@
 @charset "utf-8";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@import "mixins/breakpoints";
+
+// set Bootstrap navbar collapse breakpoint
+$grid-float-breakpoint: map-get($grid-breakpoints, 'lg') !default;
+$screen-xs: 0 !default;
+$screen-sm: 680px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+
+.container {
+	@media (min-width: $screen-sm-min) {
+		width: auto;
+	}
+}
+
+.hidden-mobile {
+	@include media-down(xs) {
+		display: none !important;
+	}
+}
+.visible-mobile {
+	display: none !important;
+
+	@include media-down(xs) {
+		display: block !important;
+	}
+}
+

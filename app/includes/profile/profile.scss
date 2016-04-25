@@ -9,28 +9,36 @@
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 
+	@include media-down(md) {
+		background-position: top;
+		padding: 70px 0;
+	}
+	@include media-down(sm) {
+		padding: 20px 0;
+	}
+
 	h1 {
-		font-size: 70px;
 		font-size: 50px;
+		margin-top: 35px;
+		margin-bottom: 14px;
+
 		@include media-down(md) {
+			margin: 5px 0;
+		}
+
+		@include media-down(sm) {
 			font-size: 30px;
 		}
 	}
-	@include media-down(md) {
-		background-position: top top;
-	}
-	@include media-down(sm) {
-		font-size: 30px;
-		padding: 20px 0;
-	}
+
 	.profile-image {
 		@include media-down(sm) {
 			margin: 20px 0;
+			padding-right: 0;
 		}
-		@include media-down(md) {
-			.col-sm-12 {
-				padding: 0;
-			}
+		
+		.col-sm-12 {
+			padding: 0;
 		}
 	}
 	.profile-photo {
@@ -38,31 +46,37 @@
 		max-width: 100%;
 		@include media-down(sm) {
 			width: 100%;
-    		height: 165px;
+			border-width: 3px;
+    		// height: 165px;
     	}
 	}
 
 	.agent-name {
 		font-size: 24px;
-		display: inline-block;
 		margin-right: 40px;
+		line-height: 30px;
 		vertical-align: middle;
-		margin-bottom: 25px;
-		margin-top: 10px;
-		@include media-down(md) {
-			margin-bottom: 10px;
-		}
+
 		@include media-down(sm) {
 			font-size: 16px;
 			margin-right: 15px;
 		}
 	}
-	.social-icons a {
-		margin-right: 10px
+	.social-icons {
+		margin-top: 5px;
+		display: inline-block;
+		a {
+			margin-right: 10px
+		}
 	}
-	p {
+	.summarry {
 		font-size: 18px;
+		margin-top: 26px;
+		margin-bottom: 35px;
 		line-height: 1.9;
+		@include media-down(xs) {
+			margin-top: 0;
+		}
 		@include media-down(sm) {
 			font-size: 16px;
 		}
@@ -89,9 +103,9 @@
 		@include media-down(md) {
 			padding: 16px 25px;
 		}
-		@include media-down(sm) {
+		@include media-down(xs) {
 			width: 160px;
-			margin-bottom: 10px;
+			margin-bottom: 13px;
 			font-size: 13px;
 		}
 	}
@@ -101,11 +115,12 @@
 			margin-right: 28px;
 			
 			@include media-down(md) {
-				margin-right: 25px;
+				margin-right: 20px;
 			}
-			@include media-down(sm) {
+			@include media-down(xs) {
 				margin-right: 0;
 				display: block;
+				width: 100%;
 			}
 		}
 	}

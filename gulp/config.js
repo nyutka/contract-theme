@@ -11,7 +11,7 @@ module.exports = {
         },
         notify: false, //hide the annoying notification
         files: [
-            dest + '/**',
+            dest + '/**/*',
             // Exclude Map files
             '!' + dest + '/**.map'
         ]
@@ -27,21 +27,21 @@ module.exports = {
         ],
         vendorBundle: 'vendor.css',
         vendors: [
-            './node_modules/mapbox.js/theme/style.css',
-            './node_modules/bootstrap/dist/css/bootstrap.css'
+            './node_modules/mapbox.js/theme/style.css'
         ],
         includePaths: [
-            src + '/css'
+            src + '/css',
+            './node_modules'
         ]
     },
     fonts: {
-        src: src + '/fonts/**',
+        src: src + '/fonts/**/*',
         dest: dest + '/fonts'
     },
     images: {
         src: [
-            src + '/images/**',
-            src + '/includes/**/images/**'
+            src + '/images/**/*',
+            src + '/includes/**/images/**/*'
         ],
         dest: dest + '/images'
     },
