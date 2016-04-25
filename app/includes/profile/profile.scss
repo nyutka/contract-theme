@@ -5,35 +5,56 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-
 	padding: 50px 0;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 
 	h1 {
 		font-size: 70px;
+		font-size: 50px;
 		@include media-down(md) {
-			font-size: 50px
-		}
-		@include media-down(sm) {
 			font-size: 30px;
 		}
 	}
-
+	@include media-down(md) {
+		background-position: top top;
+	}
+	@include media-down(sm) {
+		font-size: 30px;
+		padding: 20px 0;
+	}
+	.profile-image {
+		@include media-down(sm) {
+			margin: 20px 0;
+		}
+		@include media-down(md) {
+			.col-sm-12 {
+				padding: 0;
+			}
+		}
+	}
 	.profile-photo {
 		border: solid 5px #ffffff;
+		max-width: 100%;
+		@include media-down(sm) {
+			width: 100%;
+    		height: 165px;
+    	}
 	}
 
 	.agent-name {
 		font-size: 24px;
 		display: inline-block;
 		margin-right: 40px;
-		vertical-align: sub;
+		vertical-align: middle;
 		margin-bottom: 25px;
 		margin-top: 10px;
+		@include media-down(md) {
+			margin-bottom: 10px;
+		}
 		@include media-down(sm) {
 			font-size: 16px;
+			margin-right: 15px;
 		}
 	}
 	.social-icons a {
@@ -53,10 +74,11 @@
 		border-radius: 2px;
 		border: solid 1px #979797;
 		background-color: transparent;
-		padding: 12px 40px;
+		padding: 18px 32px;
 		text-transform: uppercase;
 		color: #fff;
-		font-size: 22px;
+		font-size: 14px;
+		font-weight: bold;
 		line-height: 1.1;
 		transition: background-color 0.4s ease-in, color 0.3s ease-in;
 		&:hover, &:focus {
@@ -64,10 +86,13 @@
 			color: #3586a1;
 		}
 
+		@include media-down(md) {
+			padding: 16px 25px;
+		}
 		@include media-down(sm) {
 			width: 160px;
 			margin-bottom: 10px;
-			font-size: 20px;
+			font-size: 13px;
 		}
 	}
 
@@ -77,6 +102,10 @@
 			
 			@include media-down(md) {
 				margin-right: 25px;
+			}
+			@include media-down(sm) {
+				margin-right: 0;
+				display: block;
 			}
 		}
 	}
