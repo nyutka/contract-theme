@@ -4,31 +4,28 @@
 
 @import "mixins/breakpoints";
 
+$screen-xs: 0;
+$screen-sm: 680px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
 // set Bootstrap navbar collapse breakpoint
-$grid-float-breakpoint: map-get($grid-breakpoints, 'lg') !default;
-$screen-xs: 0 !default;
-$screen-sm: 680px !default;
-$screen-md: 768px !default;
-$screen-lg: 992px !default;
+$grid-float-breakpoint: $screen-lg;
 
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 .container {
-	@media (min-width: $screen-sm-min) {
+	@media (min-width: $screen-sm) {
 		width: auto;
 	}
-}
-
-.hidden-mobile {
-	@include media-down(xs) {
-		display: none !important;
+	@media (min-width: $screen-md) {
+		width: auto;
+	}
+	@media (min-width: $screen-lg) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-xl) {
+		width: $container-lg;
 	}
 }
-.visible-mobile {
-	display: none !important;
-
-	@include media-down(xs) {
-		display: block !important;
-	}
-}
-
